@@ -18,6 +18,11 @@
     width: 40px;
   }
 
+@include mobile-s{
+  bottom: 50px;
+  right: 180px;
+  }
+
   &::before {
     content: '';
     position: absolute;
