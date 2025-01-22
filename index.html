@@ -1041,20 +1041,19 @@
     </div>
   </dialog>
    
-  <!-- Кнопка чат-бота -->
   <div class="chatbot__icon" role="button" aria-label="Open Chatbot"></div>
    <script>
     document.addEventListener("DOMContentLoaded", function () {
-      // Конфигурация чат-бота
+
       const configChatbot = {
-        btn: '.chatbot__icon', // CSS-селектор кнопки вызова
-        replicas: '/data/dialogue.json', // Путь к JSON с репликами
-        root: Chatbot.createTemplate(), // Корневой элемент
+        btn: '.chatbot__icon', 
+        replicas: '/data/dialogue.json', 
+        root: Chatbot.createTemplate(), 
       };
 
-      let chatbot = null; // Переменная для хранения экземпляра
+      let chatbot = null; 
 
-      // Обработчик клика по кнопке вызова чат-бота
+      
       document.querySelector(configChatbot.btn).addEventListener("click", function () {
         this.classList.add('d-none');
         const $tooltip = this.querySelector('.chatbot__tooltip');
@@ -1066,7 +1065,7 @@
 
         if (chatbot) return;
 
-        // Получение JSON-файла с помощью Fetch API
+        
         fetch(configChatbot.replicas)
           .then(response => {
             if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
@@ -1074,11 +1073,11 @@
           })
           .then(data => {
             configChatbot.replicas = data;
-            // Инициализация Chatbot
+            
             chatbot = new Chatbot(configChatbot);
             chatbot.init();
           })
-          .catch(error => console.error("Ошибка загрузки сценария чат-бота:", error));
+          .catch(error => console.error("Script loading error of the chatbot:", error));
       });
     });
   </script>
