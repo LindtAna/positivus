@@ -1,0 +1,72 @@
+.chatbot__icon {
+  position: fixed;
+  bottom: 70px;
+  right: 32px;
+  width: 60px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background-color: var(--color-green);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  border: var(--border);
+
+  &:hover {
+    background-color: var(--color-green-alt);
+  }
+
+  @include mobile {
+    width: 40px;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    left: 12px;
+    top: 11px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+    background-image: url("../images/chatbot/chatbot-icon.svg");
+
+    @include mobile {
+      width: 27px;
+      height: 30px;
+      left: 6px;
+      top: 4px;
+    }
+  }
+
+}
+
+
+.btn {
+  width: 100%;
+  margin-bottom: 5px;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: 400;
+  color: var(-color-dark);
+  text-align: left;
+  vertical-align: middle;
+  user-select: none;
+  background-color: var(--color-green);
+  border: 1px solid transparent;
+  padding: 0.5rem 0.75rem;
+  border-radius: var(--border-radius-small);
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+  border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+
+  &:hover {
+    color: var(--color-dark);
+    background-color: var(--color-green-alt);
+  }
+
+  &:focus,
+  &.focus {
+    outline: 0;
+  }
+}

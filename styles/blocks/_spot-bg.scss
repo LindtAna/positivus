@@ -1,0 +1,9 @@
+.spot-bg{
+    padding-inline: 7px;
+    background-color: var(--color-green);
+    border-radius: var(--border-radius-small);
+
+    &--white{
+        background-color: var(--color-light);
+    }
+}
