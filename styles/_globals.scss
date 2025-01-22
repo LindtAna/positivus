@@ -7,7 +7,10 @@ body{
     color: var(--color-dark);
     background-color: var(--color-light);
     margin-right:80px;
- 
+
+    @include mobile-s{
+        margin-right:0;
+    }
 }
 
 
