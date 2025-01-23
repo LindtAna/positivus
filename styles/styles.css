@@ -1305,13 +1305,19 @@ h4, .h4 {
          column-gap: 30px;
   }
 }
+@media (max-width: 767px) {
+  .reviews__slider-list {
+    -moz-column-gap: 53px;
+         column-gap: 53px;
+  }
+}
 .reviews__slider-item {
   min-width: var(--reviewsSliderSlideWidth);
   box-sizing: border-box;
 }
 @media (max-width: 767px) {
   .reviews__slider-item {
-    --reviewsSliderSlideWidth: 200px;
+    --reviewsSliderSlideWidth: 250px;
   }
 }
 .reviews__actions {
