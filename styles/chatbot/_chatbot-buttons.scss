@@ -1,45 +1,29 @@
 .chatbot__icon {
+  @include flex-center;
+  @include square(60px);
+
   position: fixed;
   bottom: 70px;
   right: 32px;
-  width: 60px;
-  aspect-ratio: 1;
   border-radius: 50%;
   background-color: var(--color-green);
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   border: var(--border);
+  box-shadow: var(--shadow);
 
   &:hover {
     background-color: var(--color-green-alt);
   }
 
-  @include mobile {
-    width: 40px;
-  }
-
-@include mobile-s{
-  bottom: 50px;
-  right: 180px;
-  }
-
   &::before {
+    @include abs-center;
+    @include square(60%);
+
     content: '';
-    position: absolute;
-    width: 35px;
-    height: 35px;
-    left: 12px;
-    top: 11px;
     background: transparent no-repeat center center;
     background-size: 100% 100%;
     background-image: url("../images/chatbot/chatbot-icon.svg");
-
-    @include mobile {
-      width: 27px;
-      height: 30px;
-      left: 6px;
-      top: 4px;
-    }
   }
 
 }
