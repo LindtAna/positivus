@@ -1819,49 +1819,35 @@ h4, .h4 {
 }
 
 .chatbot__icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  aspect-ratio: 1;
   position: fixed;
   bottom: 70px;
   right: 32px;
-  width: 60px;
-  aspect-ratio: 1;
   border-radius: 50%;
   background-color: var(--color-green);
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   border: var(--border);
+  box-shadow: var(--shadow);
 }
 .chatbot__icon:hover {
   background-color: var(--color-green-alt);
 }
-@media (max-width: 767px) {
-  .chatbot__icon {
-    width: 40px;
-  }
-}
-@media (max-width: 480px) {
-  .chatbot__icon {
-    bottom: 50px;
-    right: 180px;
-  }
-}
 .chatbot__icon::before {
-  content: "";
   position: absolute;
-  width: 35px;
-  height: 35px;
-  left: 12px;
-  top: 11px;
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  width: 60%;
+  aspect-ratio: 1;
+  content: "";
   background: transparent no-repeat center center;
   background-size: 100% 100%;
   background-image: url("../images/chatbot/chatbot-icon.svg");
-}
-@media (max-width: 767px) {
-  .chatbot__icon::before {
-    width: 27px;
-    height: 30px;
-    left: 6px;
-    top: 4px;
-  }
 }
 
 .btn {
