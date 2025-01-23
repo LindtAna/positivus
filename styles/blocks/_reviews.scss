@@ -34,7 +34,9 @@
             @include tablet{
                column-gap: 30px;
             }
-
+            @include mobile{
+                column-gap: 53px;
+            }
 
         }
 
@@ -43,7 +45,7 @@
            box-sizing: border-box;
 
            @include mobile{
-            --reviewsSliderSlideWidth:  200px;
+            --reviewsSliderSlideWidth:  250px;
            }
         }
     }
