@@ -4,7 +4,7 @@
     column-gap: 30px;
     min-height: 310px;
     padding: 50px;
-    background-color: var(--color-grey);
+    background-color: var(--colour-grey);
     border: var(--border);
     border-radius: var(--border-radius-large);
     box-shadow: var(--shadow);
@@ -16,11 +16,11 @@
     }
 
     &--green-bg {
-        background-color: var(--color-green);
+        background-color: var(--colour-green);
     }
 
     &--dark-bg {
-        background-color: var(--color-dark);
+        background-color: var(--colour-dark);
     }
 
 
@@ -61,7 +61,7 @@
     }
 
     &__link {
-        --serviceCardLinkIconColour: var(--color-green);
+        --serviceCardLinkIconColour: var(--colour-green);
 
         display: inline-flex;
         align-items: center;
@@ -78,8 +78,8 @@
 
 
         &--white {
-            --serviceCardLinkIconColour: var(--color-dark);
-            color: var(--color-light);
+            --serviceCardLinkIconColour: var(--colour-dark);
+            color: var(--colour-light);
         }
 
         &-icon-wrapper {
