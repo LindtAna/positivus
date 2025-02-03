@@ -8,14 +8,14 @@
     @include flex-center;
     @include square(24px);
 
-    color: var(--color-light);
+    color: var(--colour-light);
 
     &.is-current{
-        color: var(--color-green);
+        color: var(--colour-green);
     }
 
     include hover{
-        color: var(--color-green);
+        color: var(--colour-green);
     }
   }
 
