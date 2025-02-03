@@ -6,14 +6,14 @@
   bottom: 70px;
   right: 32px;
   border-radius: 50%;
-  background-color: var(--color-green);
+  background-color: var(--colour-green);
   cursor: pointer;
   transition: background-color 0.2s ease-in-out;
   border: var(--border);
   box-shadow: var(--shadow);
 
   &:hover {
-    background-color: var(--color-green-alt);
+    background-color: var(--colour-green-alt);
   }
 
   &::before {
@@ -38,11 +38,11 @@
   display: inline-block;
   cursor: pointer;
   font-weight: 400;
-  color: var(-color-dark);
+  color: var(-colour-dark);
   text-align: left;
   vertical-align: middle;
   user-select: none;
-  background-color: var(--color-green);
+  background-color: var(--colour-green);
   border: 1px solid transparent;
   padding: 0.5rem 0.75rem;
   border-radius: var(--border-radius-small);
@@ -50,8 +50,8 @@
   border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
   &:hover {
-    color: var(--color-dark);
-    background-color: var(--color-green-alt);
+    color: var(--colour-dark);
+    background-color: var(--colour-green-alt);
   }
 
   &:focus,
