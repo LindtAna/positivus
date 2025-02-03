@@ -28,14 +28,14 @@
 
 
         padding: 40px 60px;
-        background-color: var(--color-grey);
+        background-color: var(--colour-grey);
         border: var(--border);
         border-radius: var(--border-radius-large);
         box-shadow: var(--shadow);
         transition-duration: var(-transition-duration);
 
         @include hover {
-            background-color: var(--color-green-alt);
+            background-color: var(--colour-green-alt);
         }
 
         @include mobile{
@@ -45,7 +45,7 @@
         &[open] {
             --indicatorRotationDeg: 0deg;
 
-            background-color: var(--color-green);
+            background-color: var(--colour-green);
            
         }
 
@@ -89,7 +89,7 @@
              
             flex-shrink: 0;
             position: relative;
-            background-color: var(--color-grey);
+            background-color: var(--colour-grey);
             border:var(--border);
             border-radius: 50%;
 
@@ -105,7 +105,7 @@
               content: '';
               width: 45%;
               height: 10%;
-              background-color: var(--color-dark);
+              background-color: var(--colour-dark);
             }
             &::after{
                 rotate: var(--indicatorRotationDeg);
