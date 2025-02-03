@@ -4,8 +4,8 @@ body{
     font-family: var(--font-family-basic);
     font-weight: 400;
     line-height: 1.28;
-    color: var(--color-dark);
-    background-color: var(--color-light);
+    color: var(--colour-dark);
+    background-color: var(--colour-light);
     margin-right:80px;
 
     @include mobile-s{
