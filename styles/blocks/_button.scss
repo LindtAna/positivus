@@ -4,28 +4,28 @@
   height: var(--button-height);
   padding-inline: 35px;
   font-size: 20px;
-  color: var(--color-light);
-  background-color: var(--color-dark);
+  color: var(--colour-light);
+  background-color: var(--colour-dark);
   border: var(--border);
   border-radius: var(--border-radius);
 
   @include hover {
-    color: var(--color-dark);
-    background-color: var(--color-green);
+    color: var(--colour-dark);
+    background-color: var(--colour-green);
   }
 
   &--transparent{
-    color: var(--color-dark);
+    color: var(--colour-dark);
     background-color: transparent;
   }
 
   &-green{
-    background-color: var(--color-green);
-    color: var(--color-dark);
+    background-color: var(--colour-green);
+    color: var(--colour-dark);
 
     @include hover{
-      color: var(--color-green);
-      background-color: var(--color-dark);
+      color: var(--colour-green);
+      background-color: var(--colour-dark);
     }
   }
 }
