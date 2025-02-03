@@ -4,8 +4,8 @@
     display: flex;
     flex-direction: column;
     row-gap: 110px;
-    color: var(--color-light);
-    background-color: var(--color-dark);
+    color: var(--colour-light);
+    background-color: var(--colour-dark);
     border-radius: var(--border-radius-large);
     overflow-x: hidden;
 
@@ -64,10 +64,10 @@
         @include flex-center;
         @include square(48px);
         
-        color:var(--color-light);
+        color:var(--colour-light);
 
         @include hover{
-            color: var(--color-green);
+            color: var(--colour-green);
         }
 
         svg{
