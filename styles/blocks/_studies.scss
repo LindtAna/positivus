@@ -5,8 +5,8 @@
 
     @include mobile-above {
         padding: 40px;
-        color: var(--color-light);
-        background-color: var(--color-dark);
+        color: var(--colour-light);
+        background-color: var(--colour-dark);
         border-radius: var(--border-radius-large);
     }
 
@@ -43,14 +43,14 @@
 
             &:not(:last-child) {
                 padding-right: var(--studiesItemPaddingX);
-                border-right: 1px solid var(--color-light);
+                border-right: 1px solid var(--colour-light);
             }
         }
 
 
         @include mobile {
-            color: var(--color-light);
-            background-color: var(--color-dark);
+            color: var(--colour-light);
+            background-color: var(--colour-dark);
             border-radius: var(--border-radius-large);
             padding: 42px 50px;
             min-width: 350px;
@@ -64,7 +64,7 @@
         column-gap: 15px;
         font-size: 20px;
         line-height: 1.4;
-        color: var(--color-green);
+        color: var(--colour-green);
 
         @include hover {
             opacity: 0.7;
