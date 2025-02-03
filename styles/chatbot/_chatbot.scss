@@ -2,9 +2,9 @@
     display: flex;
     flex-direction: column;
     width: 390px;
-    background-color: var(--color-grey);
+    background-color: var(--colour-grey);
     line-height: 1.2;
-    color: var(--color-dark);
+    color: var(--colour-dark);
     position: fixed;
     bottom: 20px;
     right: 20px;
@@ -31,8 +31,8 @@
     
   
     &__header {
-      background-color: var(--color-green-alt);
-      color:var(--color-dark);
+      background-color: var(--colour-green-alt);
+      color:var(--colour-dark);
       padding: 1rem;
       display: flex;
       border-radius: var(--border-radius) var(--border-radius) 0 0;
@@ -86,9 +86,9 @@
       }
   
       &::-webkit-scrollbar-thumb {
-        background-color: var(--color-dark);
+        background-color: var(--colour-dark);
         border-radius: 7px;
-        border: 4px solid var(--color-grey);
+        border: 4px solid var(--colour-grey);
       }
   
       &::-webkit-scrollbar-button {
@@ -111,7 +111,7 @@
         text-decoration: underline;
 
         @include hover {
-          color: var(--color-green);
+          color: var(--colour-green);
         }
       }
     }
@@ -124,8 +124,8 @@
       animation-timing-function: ease-in-out;
   
       &_bot {
-        color:var(--color-dark);
-        background: var(--color-light);
+        color:var(--colour-dark);
+        background: var(--colour-light);
         border-radius: 0.5rem;
       }
   
@@ -137,7 +137,7 @@
         padding: 0;
   
         &-disabled {
-          background: var(--color-green);
+          background: var(--colour-green);
           border-radius: 0.5rem;
           text-align: left;
         }
