@@ -1,10 +1,10 @@
 .field{
     --fieldInputHeight: var(--input-height);
-    --fieldInputTextColour: var(--color-dark);
-    --fieldInputBgColour: var(--color-light);
-    --fieldInputBorderColour: var(--color-dark);
-    --fieldInputPlaceholderColour: var(--color-grey-alt);
-    --fieldInputHoverBgColour: var(--color-green);
+    --fieldInputTextColour: var(--colour-dark);
+    --fieldInputBgColour: var(--colour-light);
+    --fieldInputBorderColour: var(--colour-dark);
+    --fieldInputPlaceholderColour: var(--colour-grey-alt);
+    --fieldInputHoverBgColour: var(--colour-green);
 
     display: flex;
     flex-direction:column;
@@ -19,11 +19,11 @@
     }
 
     &-dark{
-        --fieldInputTextColour: var(--color-green);
-        --fieldInputBgColour: var(--color-dark-alt);
-        --fieldInputBorderColour: var(--color-light);
-        --fieldInputPlaceholderColour: var(--color-light);
-        --fieldInputHoverBgColour: var(--color-dark);
+        --fieldInputTextColour: var(--colour-green);
+        --fieldInputBgColour: var(--colour-dark-alt);
+        --fieldInputBorderColour: var(--colour-light);
+        --fieldInputPlaceholderColour: var(--colour-light);
+        --fieldInputHoverBgColour: var(--colour-dark);
     }
 
     row-gap: 5px;
@@ -51,7 +51,7 @@
         }
 
         &:focus{
-            border-color: var(--color-green);
+            border-color: var(--colour-green);
             outline: none;
         }
 
