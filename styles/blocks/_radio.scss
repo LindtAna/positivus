@@ -21,7 +21,7 @@
         @include square(28px);
          
         position: relative;
-        background-color: var(--color-light);
+        background-color: var(--colour-light);
         border: var(--border);
         border-radius: 50%;
 
@@ -30,7 +30,7 @@
             @include square(60%);
 
             content:'';
-            background-color: var(--color-green);
+            background-color: var(--colour-green);
             border-radius: inherit;
             transition-duration: var(--transition-duration);
         }
