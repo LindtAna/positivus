@@ -4,7 +4,7 @@
   
     @include mobile-above {
       padding: 60px 100px 80px;
-      background-color: var(--color-grey);
+      background-color: var(--colour-grey);
       border-radius: var(--border-radius-large);
     }
   
@@ -35,7 +35,7 @@
     &__request-types,
     &__body {
       @include mobile {
-        background-color: var(--color-grey);
+        background-color: var(--colour-grey);
       }
     }
   
