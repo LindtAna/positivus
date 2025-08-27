@@ -17,11 +17,14 @@ Die Benutzeroberfläche ist responsiv und modular aufgebaut.
 SCSS-Komponenten sorgen für eine klare Struktur und einfache Wartbarkeit.
 Der Fokus liegt auf minimalistischer Gestaltung, klarer Typografie und intuitiver Navigation.
 
-**Screenshot 1: Desktop-Ansicht**  
-*(Hier Screenshot einfügen)*
+## 1: Desktop-Ansicht
+![Desktop-Ansicht](https://github.com/LindtAna/positivus/blob/main/positiv.png?raw=true)
 
-**Screenshot 2: Mobile-Ansicht**  
-*(Hier Screenshot einfügen)*
+
+
+
+## 2: Mobile-Ansicht**  
+![Mobile-Ansicht]([https://github.com/LindtAna/positivus/blob/main/positiv.png?raw=tru](https://github.com/LindtAna/positivus/blob/main/positivus%20mobile.png)
 
 ## Funktionalität
 - Komponentenbasierte SCSS-Struktur für UI-Elemente
@@ -77,8 +80,9 @@ Der Chatbot basiert auf einer regelgesteuerten Dialogstruktur, die in `dialogue.
 - Antwortbuttons mit Verlinkung zu Folge-Repliken
 - Reset- und Close-Funktion zur Steuerung des Dialogflusses
 
-**Screenshot: Chatbot-Interaktion**  
-*(Hier Screenshot einfügen)*
+
+## Chatbot-Interaktion
+![ChatBot](https://github.com/LindtAna/positivus/blob/main/chatbot.png)
 
 ### Beispielstruktur aus `dialogue.json`
 
