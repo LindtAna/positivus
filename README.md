@@ -32,10 +32,7 @@ Der Fokus liegt auf minimalistischer Gestaltung, klarer Typografie und intuitive
 
 ## Projektstruktur
 
-```
-positivus/ ├── index.html // Hauptseite ├── chatbot.js // Chatbot-Logik ├── letters.js // Link-Animation im Header ├── slider.js // Slider-Skript ├── dialogue.json // Dialogstruktur für den Chatbot ├── styles/ │ ├── blocks/ // UI-Komponenten │ ├── chatbot/ // Chatbot-Stile │ ├── _globals.scss // Basisstile │ ├── _variables.scss // Farb- und Typografievariablen │ ├── _mixins.scss // SCSS-Mixins │ ├── _media.scss // Media Queries │ ├── styles.scss // Haupt-SCSS-Datei │ └── styles.css // Kompilierte CSS-Datei └── README.md // Dokumentation
-
-```
+```positivus/ ├── index.html // Hauptseite ├── chatbot.js // Chatbot-Logik ├── letters.js // Link-Animation im Header ├── slider.js // Slider-Skript ├── dialogue.json // Dialogstruktur für den Chatbot ├── styles/ │ ├── blocks/ // UI-Komponenten │ ├── chatbot/ // Chatbot-Stile │ ├── _globals.scss // Basisstile │ ├── _variables.scss // Farb- und Typografievariablen │ ├── _mixins.scss // SCSS-Mixins │ ├── _media.scss // Media Queries │ ├── styles.scss // Haupt-SCSS-Datei │ └── styles.css // Kompilierte CSS-Datei └── README.md // Dokumentation```
 
 
 
