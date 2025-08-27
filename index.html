@@ -12,39 +12,54 @@
 <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon/favicon-16x16.png">
 <link rel="manifest" href="./images/favicon/site.webmanifest">
   <title>Positivus</title>
+  <script src="letters.js" type="module"></script>
+  <script src="chatbot.js" defer></script>
+  <script src="slider.js" type="module"></script>
+
 </head>
 
 <body>
   <header class="header">
     <div class="header__inner container">
+      <!-- Logo mit lazy loading für bessere Ladezeiten -->
       <a class="header__logo logo" href="index.html">
         <img class="logo__image " src="./images/logo.svg " alt="Positivus" width="220" height="36" loading="lazy" />
       </a>
-
+<!-- Navigation für Desktop, versteckt auf Mobilgeräten -->
       <nav class="header__menu hidden-mobile">
         <ul class="header__menu-list">
+          <!-- 
+            Jeder Navigationslink enthält <span>-Elemente mit `data-letter`-Attributen, die für eine JavaScript-basierte Animation verwendet werden (zufälliger Buchstabenwechsel bei Hover). 
+            Dies ist in letters.js implementiert.
+          -->
           <li class="header__menu-item">
-            <a class="header__menu-link" href="index.html">About us</a>
+            <a class="header__menu-link" href="index.html">
+              <div><span data-letter="A">A</span><span data-letter="b">b</span><span data-letter="o">o</span><span data-letter="u">u</span><span data-letter="t">t</span> <span data-letter="u">u</span><span data-letter="s">s</span></div>
+            </a>
           </li>
-
           <li class="header__menu-item">
-            <a class="header__menu-link" href="index.html">Services</a>
+            <a class="header__menu-link" href="index.html">
+              <div><span data-letter="S">S</span><span data-letter="e">e</span><span data-letter="r">r</span><span data-letter="v">v</span><span data-letter="i">i</span><span data-letter="c">c</span><span data-letter="e">e</span><span data-letter="s">s</span></div>
+            </a>
           </li>
-
           <li class="header__menu-item">
-            <a class="header__menu-link" href="index.html">Use Cases</a>
+            <a class="header__menu-link" href="index.html">
+              <div><span data-letter="U">U</span><span data-letter="s">s</span><span data-letter="e">e</span> <span data-letter="C">C</span><span data-letter="a">a</span><span data-letter="s">s</span><span data-letter="e">e</span><span data-letter="s">s</span></div>
+            </a>
           </li>
-
           <li class="header__menu-item">
-            <a class="header__menu-link" href="index.html">Pricing</a>
+            <a class="header__menu-link" href="index.html">
+              <div><span data-letter="P">P</span><span data-letter="r">r</span><span data-letter="i">i</span><span data-letter="c">c</span><span data-letter="i">i</span><span data-letter="n">n</span><span data-letter="g">g</span></div>
+            </a>
           </li>
-
           <li class="header__menu-item">
-            <a class="header__menu-link" href="index.html">Blog</a>
+            <a class="header__menu-link" href="index.html">
+              <div><span data-letter="B">B</span><span data-letter="l">l</span><span data-letter="o">o</span><span data-letter="g">g</span></div>
+            </a>
           </li>
         </ul>
       </nav>
-
+<!-- Button für Desktop, versteckt auf Mobilgeräten -->
       <button class="header__button button button--transparent hidden-mobile" type="button">
         Request a quote
       </button>
@@ -57,7 +72,9 @@
   </header>
 
   <main class="content">
-
+<!-- 
+    Der `content`-Container dient als Wrapper für verschiedene Abschnitte, beginnend mit einem Hero-Bereich.
+  -->
     <section class="section section--hidden-x container">
       <div class="section__body">
         <div class="hero">
@@ -78,7 +95,11 @@
             <img class="hero__image" src="./images/hero_bg.svg " alt=" " width="600" height="515" loading="lazy" />
           </div>
 
-
+<!-- 
+            Partner-Logos: Eine Liste von Logos bekannter Unternehmen 
+            Die `visually-hidden`-Klasse für den `<h2>`-Tag verbirgt den Titel für Screenreader, ohne ihn visuell anzuzeigen. 
+            Alle Bilder verwenden `loading="lazy"`, um die Ladezeit der Seite zu verbessern
+          -->
           <div class="hero__partners">
             <h2 class="visually-hidden">Our partners</h2>
             <ul class="hero__partners-list">
@@ -118,7 +139,10 @@
       </div>
 
     </section>
-
+<!-- 
+  Dienstleistungen der digitalen Marketingagentur
+  Die Struktur ist modular aufgebaut, mit einem Header für die Überschrift und Beschreibung, gefolgt von einer Liste von Dienstleistungskarten und einem abschließenden Banner als Call-to-Action
+-->
     <section class="section container">
       <header class="section__header">
         <h2 class="section__title spot-bg">Services</h2>
@@ -129,11 +153,20 @@
       </header>
       <div class="section__body">
         <div class="services">
+
+          <!-- 
+        Die Dienstleistungen werden in einem `grid--2` für zwei Spalten dargestellt. 
+        Karten haben spezielle Klassen `service-card--green-bg` oder `service-card--dark-bg` für unterschiedliche Hintergrundfarben
+      -->
           <ul class="services__list grid grid--2">
 
             <li class="services__item">
               <article class="service-card">
                 <div class="service-card__body">
+                  <!-- 
+                Titel sind in <span>-Elemente mit `spot-bg` aufgeteilt, vermutlich für Hervorhebungseffekte. 
+                Die `service-card__link` enthält ein SVG-Symbol für den "Learn more"-Link, das einheitlich für alle Karten verwendet wird.
+              -->
                   <h3 class="service-card__title">
                     <span class="spot-bg">Search engine</span>
                     <span class="spot-bg">optimization</span>
@@ -195,6 +228,7 @@
                     <span class="service-card__link-label">Learn more</span>
                   </a>
                 </div>
+                <!-- Bilder mit `loading="lazy"` für bessere Performance -->
                 <img class="service-card__image" src="./images/services/3.svg" alt="" width="210" height="170"
                   loading="lazy" />
               </article>
@@ -270,6 +304,11 @@
             </li>
 
           </ul>
+
+          <!-- 
+        Banner am Ende der Sektion als Call-to-Action. 
+        Das Bild im Banner ist auf Mobilgeräten ausgeblendet (`hidden-mobile`) -> responsive Design 
+      -->
           <div class="services__banner banner">
             <div class="banner__inner">
               <div class="banner__body">
@@ -452,7 +491,10 @@
         </div>
       </div>
     </section>
-
+<!-- 
+  TEAM SECTION: Dieser Abschnitt stellt das Team der digitalen Marketingagentur vor.
+ Besteht aus einem Header mit Titel und Beschreibung sowie einer Liste von Teammitgliedern, die in Kartenform dargestellt werden.
+-->
     <section class="section container">
       <header class="section__header">
         <h2 class="section__title spot-bg">Team</h2>
@@ -462,6 +504,12 @@
       </header>
       <div class="section__body">
         <div class="team">
+
+          <!-- 
+        Teammitglieder werden in einem Grid-Layout (`grid--3`) mit drei Spalten angezeigt. 
+        Jede Karte (`team-card`) enthält ein Bild, Name, Position, einen LinkedIn-Link und eine kurze Beschreibung der Erfahrung. 
+        Die Struktur ist konsistent für alle Teammitglieder
+      -->
           <ul class="team__list grid grid--3">
 
             <li class="team__item">
@@ -474,7 +522,10 @@
                     <h3 class="team-card__name h4">John Smith</h3>
                     <p class="team-card__post">CEO and Founder</p>
                   </div>
-
+<!-- 
+                LinkedIn-Link mit SVG-Icon. Die Klasse `visually-hidden` verbirgt den Text für Screenreader, während das SVG-Icon sichtbar bleibt. 
+                Das `target="_blank"` öffnet den Link in einem neuen Tab
+              -->
                   <a class="team-card__link" href="index.html" target="_blank">
                     <span class="visually-hidden">LinkedIn</span>
                     <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -670,7 +721,11 @@
       </div>
     </section>
 
-
+<!-- 
+  Der Abschnitt zeigt Kundenbewertungen in einem Slider-Format. 
+  Er besteht aus einem Header mit Titel und Beschreibung sowie einem Slider, der durch Navigationstasten und eine Paginierung gesteuert wird. 
+  Die Struktur ist für Responsivität ausgelegt und verwendet Barrierefreiheits-Features wie `visually-hidden` für Screenreader.
+-->
     <section class="section container">
       <header class="section__header">
         <h2 class="section__title spot-bg">Testimonials</h2>
@@ -682,6 +737,10 @@
       </header>
       <div class="section__body">
         <div class="reviews">
+          <!-- 
+        Slider-Bereich: Die Bewertungen werden in einer Liste `reviews__slider-list` dargestellt, die über slider.js gesteuert wird. 
+        Jede Bewertung ist in einem `<blockquote>`-Element mit Name und Unternehmen des Kunden formatiert.
+      -->
           <div class="reviews__slider">
             <ul class="reviews__slider-list">
 
@@ -861,7 +920,10 @@
 
       </div>
     </section>
-
+<!-- 
+ Ein Formular für Kontaktanfragen mit Radio-Buttons für den Anfragetyp und Eingabefeldern für Name, E-Mail und Nachricht. 
+  Die Struktur ist barrierefrei gestaltet, mit `visually-hidden` für Screenreader und `required` für Pflichtfelder.
+-->
     <section id="contact-form" class="section container">
       <header class="section__header">
         <h2 class="section__title spot-bg">Contact Us</h2>
@@ -872,6 +934,7 @@
       <div class="section__body">
         <div class="contact-us">
           <form class="contact-us__form">
+            <!-- Radio-Buttons für die Auswahl des Anfragetyps -->
             <fieldset class="contact-us__request-types radios">
               <legend class="radios__title visually-hidden">Request type</legend>
               <label class="radios__item radio">
@@ -885,6 +948,7 @@
                 <span class="radio__label">Get a Quote</span>
               </label>
             </fieldset>
+            <!-- Eingabefelder mit barrierefreien Labels -->
             <div class="contact-us__body">
               <div class="contact-us__field field">
                 <label class="field__label" for="name">Name</label>
@@ -909,7 +973,10 @@
     </section>
 
   </main>
-
+<!-- 
+  Enthält das Logo, eine Navigation, Social-Media-Links, Kontaktdaten und ein Newsletter-Formular. 
+  Der Footer ist responsiv und enthält barrierefreie Elemente wie `visually-hidden` für Screenreader
+-->
   <footer class="footer container">
     <div class="footer__inner">
       <div class="footer__navigation">
@@ -917,6 +984,7 @@
           <img class="logo__image " src="./images/logo-light.svg" alt="Positivus" width="180" height="29"
             loading="lazy" />
         </a>
+        <!-- Navigation mit Links, die noch korrekte `href`-Werte benötigen -->
         <nav class="footer__menu">
           <ul class="footer__menu-list">
             <li class="footer__menu-item">
@@ -936,6 +1004,7 @@
             </li>
           </ul>
         </nav>
+        <!-- Social-Media-Links mit SVGs -->
         <div class="footer__soc1als soc1als">
           <ul class="soc1als__list">
             <li class="soc1als__item">
@@ -996,6 +1065,7 @@
               Moonstone City, Stardust State 12345</p>
           </address>
         </div>
+        <!-- Newsletter-Formular mit barrierefreiem Design -->
         <form class="footer__subscribe-form subscribe-form">
           <h2 class="visually-hidden">Subscription</h2>
           <div class="subscribe-form__field field field-big field-dark">
@@ -1013,7 +1083,10 @@
       </div>
     </div>
   </footer>
-
+<!-- 
+  MOBILE OVERLAY: Ein modales Menü für Mobilgeräte, das durch den Burger-Button im Header geöffnet wird. 
+  Es enthält die gleichen Navigationslinks wie im Header/Footer, wird aber nur auf Mobilgeräten angezeigt (`visible-mobile`).
+-->
   <dialog class="mobile-overlay visible-mobile" id="mobileOverlay">
     <form class="mobile-overlay__close-button-wrapper" method="dialog">
       <button class="mobile-overlay__close-button cross-button" type="submit">
@@ -1081,10 +1154,5 @@
       });
     });
   </script>
-
-  <script src="slider.js"></script>
-  <script src="chatbot.js" defer></script>
-
 </body>
-
 </html>
