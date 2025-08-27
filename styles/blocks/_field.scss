@@ -38,8 +38,8 @@
         padding-inline: 30px;
         color: var(--fieldInputTextColour);
         background-color: var(--fieldInputBgColour);
-        border:1px solid var(--fieldInputBorderColour);
-        border-radius: var(--border-radius);
+        // border:1px solid var(--fieldInputBorderColour);
+        // border-radius: var(--border-radius);
 
 
         @include hover{
