@@ -6,17 +6,21 @@
     },
 
     "1": {
-      "content": ["You can find all the information about our services <a href='/' target='_blank'>here</a>.", "Would you like help with anything else?"],
-      "human": [4, 5]
-    },
+  "content": [
+    "You can find all the information about our services <a href=\"#services\">here</a>.",
+    "Would you like help with anything else?"
+  ],
+  "human": [4, 5]
+}
+,
 
     "2": {
-      "content": ["Explore our case studies <a href='/' target='_blank'>here</a> to see real-life examples of our success stories.", "Would you like help with anything else?"],
+      "content": ["Explore our case studies <a href=\"#studies\">here</a> to see real-life examples of our success stories.", "Would you like help with anything else?"],
       "human": [4, 5]
     },
 
     "3": {
-      "content": ["Learn about our working process <a href='/' target='_blank'>here</a>.", "Would you like help with anything else?"],
+      "content": ["Learn about our working process <a href=\"#process\">here</a>.", "Would you like help with anything else?"],
       "human": [4, 5]
     },
 
