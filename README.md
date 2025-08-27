@@ -35,8 +35,6 @@ Der Fokus liegt auf minimalistischer Gestaltung, klarer Typografie und intuitive
 
 ## Projektstruktur
 
-## Projektstruktur
-
 ```text
 positivus/
 ├── index.html              // Hauptseite
@@ -70,7 +68,7 @@ Diese Struktur ermöglicht eine klare Trennung von Layout, Logik und Design und 
 
 ## Chatbot: Logik und Umsetzung
 
-Der Chatbot basiert auf einer regelgesteuerten Dialogstruktur, die in `dialogue.json` definiert ist. Die Logik wird vollständig im Frontend über `chatbot.js` umgesetzt.
+Der Chatbot basiert auf einer regelgesteuerten Dialogstruktur, die in `dialogue.json` definiert ist. Die Logik wird vollständig über `chatbot.js` umgesetzt.
 
 ### Hauptfunktionen
 
