@@ -23,7 +23,7 @@ Der Fokus liegt auf minimalistischer Gestaltung, klarer Typografie und intuitive
 
 
 ##  2: Mobile-Ansicht
-![Mobile-Ansicht](https://github.com/LindtAna/positivus/blob/main/positiv.png?raw=true)
+![Mobile-Ansicht](https://github.com/LindtAna/positivus/blob/main/positivus%20mobile.png?raw=true)
 
 
 ## Funktionalität
