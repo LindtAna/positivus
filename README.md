@@ -24,7 +24,7 @@ Der Fokus liegt auf minimalistischer Gestaltung, klarer Typografie und intuitive
 
 
 ## 2: Mobile-Ansicht**  
-![Mobile-Ansicht]([https://github.com/LindtAna/positivus/blob/main/positiv.png?raw=tru](https://github.com/LindtAna/positivus/blob/main/positivus%20mobile.png)
+![Mobile-Ansicht]([https://github.com/LindtAna/positivus/blob/main/positiv.png?raw=tru](https://github.com/LindtAna/positivus/blob/main/positivus%20mobile.png?raw=true)
 
 ## Funktionalität
 - Komponentenbasierte SCSS-Struktur für UI-Elemente
@@ -82,7 +82,7 @@ Der Chatbot basiert auf einer regelgesteuerten Dialogstruktur, die in `dialogue.
 
 
 ## Chatbot-Interaktion
-![ChatBot](https://github.com/LindtAna/positivus/blob/main/chatbot.png)
+![ChatBot](https://github.com/LindtAna/positivus/blob/main/chatbot.png?raw=true)
 
 ### Beispielstruktur aus `dialogue.json`
 
