@@ -165,3 +165,38 @@ class Chatbot {
     }
   }
 }
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const configChatbot = {
+    btn: '.chatbot__icon',
+    replicas: 'dialogue.json',
+    root: Chatbot.createTemplate(),
+  };
+
+  let chatbot = null;
+
+  document.querySelector(configChatbot.btn).addEventListener("click", function () {
+    this.classList.add('d-none');
+    const $tooltip = this.querySelector('.chatbot__tooltip');
+    if ($tooltip) {
+      $tooltip.classList.add('d-none');
+    }
+
+    configChatbot.root.classList.toggle('chatbot_hidden');
+
+    if (chatbot) return;
+
+    fetch(configChatbot.replicas)
+      .then(response => {
+        if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+        return response.json();
+      })
+      .then(data => {
+        configChatbot.replicas = data;
+        chatbot = new Chatbot(configChatbot);
+        chatbot.init();
+      })
+      .catch(error => console.error("Script loading error of the chatbot:", error));
+  });
+});
