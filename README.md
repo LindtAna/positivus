@@ -1,6 +1,5 @@
-# positivus
 Website + rule-based chatbot 
-https://lindtana.github.io/positivus/
+[positivus-landing-two.vercel.app/](https://positivus-landing-two.vercel.app/)
 
 # Positivus
 
