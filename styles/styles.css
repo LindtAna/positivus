@@ -132,7 +132,7 @@ svg * {
   --colour-grey-alt: #898989;
   --colour-dark-alt: #292A32;
   --colour-green-alt: #82dd12;
-  --colour-green-dark: #385d0a;
+  --colour-green-dark: #64b600;
   --colour-green-alt-rgb: 130, 221, 18;
   --colour-red: #ff0000;
   --border: 1px solid var(--colour-dark);
@@ -270,6 +270,8 @@ h4, .h4 {
   padding-inline: 30px;
   color: var(--fieldInputTextColour);
   background-color: var(--fieldInputBgColour);
+  border: 1px solid var(--fieldInputBorderColour);
+  border-radius: var(--border-radius);
 }
 @media (hover: hover) {
   .field__input:hover {
@@ -368,6 +370,7 @@ h4, .h4 {
   background-color: var(--colour-dark);
   border: var(--border);
   border-radius: var(--border-radius);
+  position: relative;
 }
 @media (hover: hover) {
   .button:hover {
@@ -400,6 +403,26 @@ h4, .h4 {
     color: var(--colour-green);
     background-color: var(--colour-dark);
   }
+}
+.button--glow {
+  position: relative;
+  z-index: 0;
+}
+.button--glow::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  bottom: -3px;
+  right: -3px;
+  padding: 4px;
+  border-radius: calc(var(--border-radius) + 3px);
+  pointer-events: none;
+  z-index: -1;
+  background: radial-gradient(circle 70px at var(--glow-position), var(--colour-green-alt) 0%, transparent 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0) padding-box;
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
 }
 
 .grid {

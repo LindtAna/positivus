@@ -1,33 +1,92 @@
+// Grundlegende Button-Styling-Klasse
 .button {
+  // Zentriert Inhalt mit Flexbox (Mixin für Display: flex und Zentrierung)
   @include flex-center(true);
 
+  // Höhe über CSS-Variable definieren
   height: var(--button-height);
+  // Innenabstand horizontal auf 35px setzen
   padding-inline: 35px;
+  // Schriftgröße auf 20px festlegen
   font-size: 20px;
+  // Textfarbe aus CSS-Variable (helle Farbe)
   color: var(--colour-light);
+  // Hintergrundfarbe aus CSS-Variable (dunkle Farbe)
   background-color: var(--colour-dark);
+  // Rahmen aus CSS-Variable definieren
   border: var(--border);
+  // Border-Radius aus CSS-Variable für abgerundete Ecken
   border-radius: var(--border-radius);
+  // Relative Positionierung für Pseudo-Elemente
+  position: relative;
 
+  // Hover-Effekte für den Button
   @include hover {
+    // Textfarbe auf dunkle Farbe wechseln
     color: var(--colour-dark);
+    // Hintergrundfarbe auf grün wechseln
     background-color: var(--colour-green);
   }
 
-  &--transparent{
+  // Variante für transparenten Button
+  &--transparent {
+    // Textfarbe auf dunkle Farbe setzen
     color: var(--colour-dark);
+    // Transparente Hintergrundfarbe
     background-color: transparent;
   }
 
-  &-green{
+  // Variante für grünen Button
+  &-green {
+    // Grüne Hintergrundfarbe aus CSS-Variable
     background-color: var(--colour-green);
+    // Textfarbe auf dunkle Farbe setzen
     color: var(--colour-dark);
 
-    @include hover{
+    // Hover-Effekte für grünen Button
+    @include hover {
+      // Textfarbe auf grün wechseln
       color: var(--colour-green);
+      // Hintergrundfarbe auf dunkle Farbe wechseln
       background-color: var(--colour-dark);
     }
   }
 
-  
+  // Variante für Button mit Glüheffekt
+  &--glow {
+    // Relative Positionierung für Pseudo-Elemente
+    position: relative;
+    // Z-Index auf 0 setzen, damit der Glüheffekt hinter dem Inhalt liegt
+    z-index: 0;
+
+    // Pseudo-Element für den Glüheffekt
+    &::before {
+      // Leeres Inhaltselement für den Glüheffekt
+      content: '';
+      // Absolute Positionierung, leicht außerhalb des Buttons
+      position: absolute;
+      top: -2px;
+      left: -2px;
+      bottom: -3px;
+      right: -3px;
+      // Padding für die Dicke des "Rahmens" (Glüheffekt)
+      padding: 4px;
+      // Border-Radius an Button anpassen, mit Versatz für äußeren Rand
+      border-radius: calc(var(--border-radius) + 3px);
+      // Keine Mausinteraktionen für das Pseudo-Element
+      pointer-events: none;
+      // Pseudo-Element hinter den Button-Inhalt setzen
+      z-index: -1;
+      // Kreisförmiger Gradient für den Glüheffekt (~5-7px Durchmesser)
+      background: radial-gradient(circle 70px at var(--glow-position),
+          var(--colour-green-alt) 0%,
+          transparent 100%);
+      // Maske, um nur den äußeren Rand anzuzeigen (zentraler Bereich wird ausgeblendet)
+      -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0) padding-box;
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+  }
 }
