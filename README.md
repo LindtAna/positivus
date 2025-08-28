@@ -41,6 +41,7 @@ positivus/
 ├── chatbot.js              // Chatbot-Logik
 ├── letters.js              // Link-Animation im Header
 ├── slider.js               // Slider-Skript
+├── buttonglow.js           // Skript für den Glüheffekt des Buttons
 ├── dialogue.json           // Dialogstruktur für den Chatbot
 ├── styles/
 │   ├── blocks/             // UI-Komponenten
@@ -101,7 +102,9 @@ Der Chatbot basiert auf einer regelgesteuerten Dialogstruktur, die in `dialogue.
 }
 ```
 
-## Link-Animation im Header
+## Features
+
+ ### Link-Animation im Header
 Die Datei letters.js implementiert eine Mikroanimation für Navigationslinks:
 
 -Jeder Buchstabe eines Links wird bei Hover temporär durch zufällige Zeichen ersetzt
@@ -112,6 +115,15 @@ Technische Details:
 -Verwendung von setInterval mit gestaffelter Verzögerung
 -Originalzeichen werden über data-letter gespeichert
 -Keine Beeinträchtigung der Funktionalität oder Barrierefreiheit
+
+### Glow-Button 
+  Interaktiver Button mit fließendem, animiertem Leuchteffekt am Rand.  
+  - SCSS-Implementierung mit Pseudo-Element `::before` und radialem Gradient  
+  - JavaScript-Animation berechnet die Position entlang des Button-Rands  
+  - Automatische Anpassung an verschiedene Button-Größen (responsive)  
+  - Konfigurierbare CSS-Variablen
+
+
 
 
 
