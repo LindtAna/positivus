@@ -1,5 +1,6 @@
-Website + rule-based chatbot 
-[positivus-landing-two.vercel.app/](https://positivus-landing-two.vercel.app/)
+# Positivus Landing Page
+
+**Live-Demo:** [positivus-landing-two.vercel.app](https://positivus-landing-two.vercel.app)
 
 # Positivus
 
