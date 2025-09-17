@@ -14,7 +14,8 @@ Der Fokus liegt auf minimalistischer Gestaltung, klarer Typografie und intuitive
 ### Design in Figma
 
 Das UI-Design basiert auf dem folgenden Figma-Template:  
-[Positivus Landing Page Design]([https://www.figma.com/community/file/1419427796264752725/streamvibe-ott-dark-theme-website-ui-design-template-for-media-streaming-movies-and-tv](https://www.figma.com/community/file/1230604708032389430))
+[Positivus Landing Page Design](https://www.figma.com/community/file/1230604708032389430)
+
 
 ## Funktionalität
 - Komponentenbasierte SCSS-Struktur für UI-Elemente
