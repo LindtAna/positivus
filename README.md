@@ -7,18 +7,14 @@ Komponentenbasierter Aufbau, interaktive Benutzerführung und visuelle Details f
 
 ## Design
 
-Die Benutzeroberfläche ist responsiv und modular aufgebaut.
+Die Benutzeroberfläche ist **responsiv** und **modular** aufgebaut.
 SCSS-Komponenten sorgen für eine klare Struktur und einfache Wartbarkeit.
 Der Fokus liegt auf minimalistischer Gestaltung, klarer Typografie und intuitiver Navigation.
 
-## 1: Desktop-Ansicht
-![Desktop-Ansicht](https://github.com/LindtAna/positivus/blob/main/positiv.png?raw=true)
+### Design in Figma
 
-
-
-##  2: Mobile-Ansicht
-![Mobile-Ansicht](https://github.com/LindtAna/positivus/blob/main/positivus%20mobile.png?raw=true)
-
+Das UI-Design basiert auf dem folgenden Figma-Template:  
+[Positivus Landing Page Design]([https://www.figma.com/community/file/1419427796264752725/streamvibe-ott-dark-theme-website-ui-design-template-for-media-streaming-movies-and-tv](https://www.figma.com/community/file/1230604708032389430))
 
 ## Funktionalität
 - Komponentenbasierte SCSS-Struktur für UI-Elemente
