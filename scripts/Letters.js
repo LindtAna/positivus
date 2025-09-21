@@ -1,3 +1,5 @@
+export function initLetters() {
+
 // Definiert eine Konstante mit allen Buchstaben des Alphabets (groß und klein), die für die zufällige Buchstabenauswahl verwendet werden.
 const letters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';
 
@@ -31,3 +33,5 @@ document.querySelectorAll('.header__menu-link').forEach(link => {
     });
   });
 });
+
+}

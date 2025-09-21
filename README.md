@@ -28,25 +28,38 @@ Das UI-Design basiert auf dem folgenden Figma-Template:
 
 ```text
 positivus/
-├── index.html              // Hauptseite
-├── chatbot.js              // Chatbot-Logik
-├── letters.js              // Link-Animation im Header
-├── slider.js               // Slider-Skript
-├── buttonglow.js           // Skript für den Glüheffekt des Buttons
-├── dialogue.json           // Dialogstruktur für den Chatbot
+├── fonts/
+├── images/
+├── scripts/
+│   ├── main.js
+│   ├── ButtonGlow.js
+│   ├── Letters.js
+│   ├── Slider.js
+│   └── Chatbot/
+│       ├── Chatbot.js
+│       └── dialogue.json
 ├── styles/
-│   ├── blocks/             // UI-Komponenten
-│   ├── chatbot/            // Chatbot-Stile
-│   ├── _globals.scss       // Basisstile
-│   ├── _variables.scss     // Farb- und Typografievariablen
-│   ├── _mixins.scss        // SCSS-Mixins
-│   ├── _media.scss         // Media Queries
-│   ├── styles.scss         // Haupt-SCSS-Datei
-│   └── styles.css          // Kompilierte CSS-Datei
-└── README.md               // Dokumentation
+│   ├── blocks/
+│   │   ├── _banner.scss
+│   │   ├── _burger-button.scss
+│   │   ├── _contact-us.scss
+│   │   ├── _field.scss
+│   │   └── … (andere Blocks)
+│   ├── chatbot/
+│   │   ├── animations.scss
+│   │   ├── _chatbot-buttons.scss
+│   │   ├── _chatbot.scss
+│   │   └── _scrollbar.scss
+│   ├── _globals.scss
+│   ├── _variables.scss
+│   ├── _mixins.scss
+│   ├── _media.scss
+│   ├── styles.scss
+│   └── styles.css
+├── index.html
+└── README.md
+            
 ```
-
-
 
 ## Komponentenbasierte SCSS-Architektur
 
@@ -60,7 +73,7 @@ Diese Struktur ermöglicht eine klare Trennung von Layout, Logik und Design und 
 
 ## Chatbot: Logik und Umsetzung
 
-Der Chatbot basiert auf einer regelgesteuerten Dialogstruktur, die in `dialogue.json` definiert ist. Die Logik wird vollständig über `chatbot.js` umgesetzt.
+Der Chatbot basiert auf einer regelgesteuerten Dialogstruktur, die in `scripts/Chatbot/dialogue.json` definiert ist. Die Logik wird vollständig über `scripts/Chatbot/Chatbot.js` umgesetzt.
 
 ### Hauptfunktionen
 
@@ -74,7 +87,7 @@ Der Chatbot basiert auf einer regelgesteuerten Dialogstruktur, die in `dialogue.
 ## Chatbot-Interaktion
 ![ChatBot](https://github.com/LindtAna/positivus/blob/main/chatbot.png?raw=true)
 
-### Beispielstruktur aus `dialogue.json`
+### Beispielstruktur aus `scripts/Chatbot/dialogue.json`
 
 ```json
 {
@@ -96,7 +109,7 @@ Der Chatbot basiert auf einer regelgesteuerten Dialogstruktur, die in `dialogue.
 ## Features
 
  ### Link-Animation im Header
-Die Datei letters.js implementiert eine Mikroanimation für Navigationslinks:
+ `Letters.js` -  Implementiert eine Mikroanimation für Navigationslinks:
 
 -Jeder Buchstabe eines Links wird bei Hover temporär durch zufällige Zeichen ersetzt
 -Nach mehreren Iterationen wird der Originaltext wiederhergestellt

@@ -1,4 +1,6 @@
-// Wählt alle Elemente mit der Klasse 'button--glow' aus
+export function initButtonGlow() {
+  
+  // Wählt alle Elemente mit der Klasse 'button--glow' aus
 const glowButtons = document.querySelectorAll('.button--glow');
 
 // Iteriert über alle Buttons mit Glow-Effekt
@@ -68,3 +70,5 @@ glowButtons.forEach(button => {
   // Animation starten
   requestAnimationFrame(updateGlow);
 });
+
+}
