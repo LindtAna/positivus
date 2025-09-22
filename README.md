@@ -1,6 +1,7 @@
 # Positivus Landing Page
 
-**Live-Demo:** [positivus-landing-two.vercel.app](https://positivus-landing-two.vercel.app)
+[Live Demo][positivus-landing-two.vercel.app](https://positivus-landing-two.vercel.app)
+
 Moderne, einseitige Website mit einem regelbasierten Chatbot, entwickelt mit HTML, SCSS und Vanilla JavaScript.
 Die Dialoglogik on Chatbot basiert auf vordefinierten Replikstrukturen, die über ein JSON-Format gesteuert werden.
 Komponentenbasierter Aufbau, interaktive Benutzerführung und visuelle Details für ein hochwertiges Nutzererlebnis.
